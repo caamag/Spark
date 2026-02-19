@@ -8,7 +8,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     html {
-        font-family: 'Roboto', sans-serif;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
         font-size: 62.5%;
     }
 

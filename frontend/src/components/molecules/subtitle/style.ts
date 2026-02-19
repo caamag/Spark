@@ -2,14 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  padding: 40px 0px 0px 40px;
+  padding: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  button {
-    margin-right: 80px;
-  }
+  box-sizing: border-box;
 `;
 
 export const Title = styled.h2`

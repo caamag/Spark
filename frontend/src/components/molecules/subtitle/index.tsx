@@ -17,7 +17,7 @@ const Subtitle = ({ title, description, onSubmit }: SubtitleProps) => {
 
       {onSubmit && (
         <Button onClick={onSubmit} isPrimary>
-          New Send
+          Submit
         </Button>
       )}
     </_.Container>

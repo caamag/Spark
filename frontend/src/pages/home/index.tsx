@@ -5,6 +5,7 @@ import { Content } from "../../global/styles";
 import Subtitle from "../../components/molecules/subtitle";
 import { Input } from "../../components/atoms/input";
 import { Textarea } from "../../components/atoms/textarea";
+import FileUpload from "../../components/molecules/inputFile";
 
 const HomePage = () => {
   return (
@@ -16,17 +17,30 @@ const HomePage = () => {
           onSubmit={() => {}}
         />
 
-        <_.SubmitContainer>
-          <_.ForomField>
-            <_.Label>Subject</_.Label>
-            <Input placeholder="Insert the subject" />
-          </_.ForomField>
+        <_.DataContainer>
+          <_.Form>
+            <_.FormField>
+              <_.Label>Subject</_.Label>
+              <Input type="text" placeholder="Insert the subject" />
+            </_.FormField>
 
-          <_.ForomField>
-            <_.Label>Content</_.Label>
-            <Textarea placeholder="Insert the content" />
-          </_.ForomField>
-        </_.SubmitContainer>
+            <_.FormField>
+              <_.Label>Content</_.Label>
+              <Textarea placeholder="Insert the content" />
+            </_.FormField>
+
+            <_.FormField>
+              <_.Label>Recipients</_.Label>
+              <FileUpload
+                onFileSelect={(file) => {
+                  console.log(file);
+                }}
+              />
+            </_.FormField>
+          </_.Form>
+
+          <_.UsersContent>Dados dos cliente carregados pelo csv</_.UsersContent>
+        </_.DataContainer>
       </_.HomeContainer>
     </Content>
   );
