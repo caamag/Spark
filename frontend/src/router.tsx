@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/home";
 
 //components
-import Sidebar from "./components/molecules/sidebar";
+import Sidebar from "./layout/sidebar";
 
 const Router = () => {
   return (

@@ -21,10 +21,11 @@ export const Container = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
+  overflow: hidden;
 `;
 
 export const Content = styled.div`
   width: 100%;
-  height: 100vh;
-  overflow-y: auto;
+  height: 95%;
+  padding: 20px;
 `;
