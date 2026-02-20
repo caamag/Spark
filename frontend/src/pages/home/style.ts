@@ -52,4 +52,19 @@ export const Label = styled.p`
 export const UsersContent = styled.div`
   width: 47%;
   min-width: 300px;
+  box-sizing: border-box;
+`;
+
+export const EmailList = styled.div`
+  width: 100%;
+  max-height: 450px;
+  overflow-y: auto;
+`;
+
+export const EmailItem = styled.p<{ isEmpty: boolean }>`
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 15px 10px;
+  background-color: ${(props) => (props.isEmpty ? "#f5f5f5" : "transparent")};
 `;
