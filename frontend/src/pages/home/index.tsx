@@ -15,8 +15,6 @@ import Loading from "../../components/atoms/loading";
 const HomePage = () => {
   const helper = useHome();
 
-  console.log(helper.csvData);
-
   return (
     <Content>
       <_.HomeContainer>
